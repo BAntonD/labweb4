@@ -1,0 +1,50 @@
+body{
+  background: burlywood;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table th, .table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
+}
+
+.table th {
+  background: darkgoldenrod;
+}
+.table td{
+  background: antiquewhite;
+}
+
+.id-column {
+  width: 10%;
+}
+
+.name-column {
+  width: 60%;
+}
+
+.price-column {
+  width: 10%;
+}
+
+.actions-column {
+  width: 20%;
+  max-width: 20%;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,37 @@
+body {
+  background: burlywood;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid black;
+  padding: 0.2%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: cadetblue;
+}
+
+input, select, textarea {
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+  height: 5vh;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}

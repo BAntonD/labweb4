@@ -1,0 +1,142 @@
+a{
+  text-decoration: none;
+  color: cadetblue;
+}
+a:hover {
+  color: black;
+}
+header, footer{
+  width: 100%;
+  border: black solid;
+  background: burlywood;
+}
+header{
+  color: gray;
+  height: 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+}
+
+.header img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+footer {
+  height: 19%;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer .lists-container{
+  display: flex;
+  margin-top: 1%;
+}
+
+.lists-container img {
+  width: 30px; /* Розмір іконок може відрізнятися */
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+content{
+  display: flex;
+}
+.menu{
+  position: absolute;
+  top: 10.5%;
+  bottom: 55%;
+  left: 0;
+  right: 80%;
+  border: black solid;
+  background: burlywood;
+}
+.news{
+  position: absolute;
+  top: 45%;
+  bottom: 19%;
+  left: 0;
+  right: 80%;
+  border: black solid;
+  background: burlywood;
+  overflow-y: auto;
+}
+.commodity{
+  position: absolute;
+  top: 10.5%;
+  bottom: 19%;
+  left: 20%;
+  right: 0;
+  overflow-y: auto;
+  border: black solid;
+}
+.commodity img{
+  height: 50%;
+}
+.lists-container {
+  display: flex;
+}
+.list {
+  margin: 0;
+  list-style: none;
+}
+li {
+  color: darkgoldenrod;
+}
+li a{
+  color: gray;
+}
+
+@media (max-width: 800px) {
+  content {
+    margin-top: 25%;
+    margin-bottom: 45%;
+    flex-direction: column;
+  }
+  .menu, .commodity, .news {
+    position: static;
+    width: 100%;
+    margin-bottom: 2px;
+    overflow-y: auto;
+  }
+  img{
+    max-width: 100%;
+  }
+}
+
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid black;
+  border-color: black transparent white transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }}
+
+
